@@ -1,0 +1,38 @@
+span{
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-bottom:25px;
+    padding: 50px;
+    color: rgb(0, 255, 242);
+    border:2px outset rgb(0, 255, 242);
+    background:black;
+    text-align:center;
+    font-size:5rem;
+    border-radius:7.5px;
+    box-shadow: 2px 2px 5px #333;
+}
+
+div{
+    width: 80%;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+
+    button{
+        font-weight:600;
+        text-transform: uppercase;
+        box-shadow: 2px 2px 5px #333;
+        color: rgb(0, 255, 242);
+        background:black;
+        height:50px;
+        border-radius:7.5px;
+        padding:15px 30px;
+        cursor:pointer;
+        &:disabled{
+            color:red;
+            cursor:not-allowed;
+        }
+    }
+}

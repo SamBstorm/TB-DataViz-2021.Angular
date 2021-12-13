@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { DemoRoutingModule } from './demo-routing.module';
 import { TimerViewerComponent } from './components/timer-viewer/timer-viewer.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { TimerViewerComponent } from './components/timer-viewer/timer-viewer.com
   ],
   imports: [
     CommonModule,
-    DemoRoutingModule
+    DemoRoutingModule,
+    SharedModule
   ]
 })
 export class DemoModule { }

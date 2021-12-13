@@ -1,2 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
-h1 {color: red;} 
+*{
+    box-sizing: border-box;
+}
+
+h1 {color: white;} 
+body{
+    font-family:'Calibri';
+    margin:0;
+    padding:0;
+}

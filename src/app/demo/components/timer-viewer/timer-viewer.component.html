@@ -1,1 +1,7 @@
-<p>timer-viewer works!</p>
+<h1>Mon Super Chrono</h1>
+<span>{{chrono | chronoFormat }}</span>
+<div>
+    <button [disabled]="started"     (click)="start()">Start</button>
+    <button [disabled]="!started"    (click)="stop()">Stop</button>
+    <button [disabled]="started"     (click)="reset()">Reset</button>
+</div>

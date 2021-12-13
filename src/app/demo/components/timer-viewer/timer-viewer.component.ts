@@ -5,19 +5,30 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
   templateUrl: './timer-viewer.component.html',
   styleUrls: ['./timer-viewer.component.scss']
 })
-export class TimerViewerComponent implements OnInit, OnDestroy {
+export class TimerViewerComponent {
 
-  private _date : Date
+  public chrono:number = 0;
+  public started:boolean = false;
+  public interval:any;
 
   constructor() {
-    this._date = new Date()
-    }
-  ngOnDestroy(): void {
-    console.warn('Bye bye!');
+    this.chrono = 0;
+    this.started = false;
   }
 
-  ngOnInit(): void {
-    console.log(this._date)
+  start(){
+    this.started = true;
+    this.interval = setInterval(() => this.chrono++,10);
+  }
+
+  stop(){
+    this.started = false;
+    clearInterval(this.interval);
+  }
+
+  reset(){
+    clearInterval(this.interval); 
+    this.chrono = 0;
   }
 
 }

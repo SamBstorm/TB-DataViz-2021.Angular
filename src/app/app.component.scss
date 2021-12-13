@@ -1,1 +1,42 @@
-h1 {color: blue;}
+
+main{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background:rgb(127, 200, 224)
+}
+
+nav{
+    width:250px;
+    height:100vh;
+    background:lightblue;
+    box-shadow: -2px 2px 5px #333;
+    padding:25px;
+    margin:0;
+    z-index:1;
+
+    ul{
+        list-style-type: none;
+        padding:0;
+        margin:0;
+        li{
+            width:100%;
+            a{
+                display:flex;
+                text-decoration:none;
+                width:100%;
+                padding:10px 20px;
+                color:white;
+                &:hover{
+                    font-size:1.1rem;
+                    background:rgb(127, 200, 224)
+                }
+            }
+        }
+    }
+}
+
+#container{
+    width:calc(100% - 250px);
+    padding:25px;
+}
