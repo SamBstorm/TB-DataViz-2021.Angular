@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ChronoFormatPipe } from './chrono-format.pipe';
+import { ChronoFormatPipe } from './pipes/chrono-format.pipe';
 
 
 
